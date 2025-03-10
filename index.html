@@ -10,7 +10,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: white;
             text-align: center;
         }
@@ -25,8 +25,7 @@
             backdrop-filter: blur(10px);
         }
 
-        h1,
-        h2 {
+        h1, h2 {
             color: #f8d210;
         }
 
@@ -35,8 +34,7 @@
             line-height: 1.6;
         }
 
-        .links a,
-        .download-btn {
+        .links a, .download-btn {
             display: inline-block;
             margin: 10px;
             padding: 12px 18px;
@@ -49,13 +47,11 @@
             transition: transform 0.2s, background 0.3s;
         }
 
-        .links a:hover,
-        .download-btn:hover {
+        .links a:hover, .download-btn:hover {
             background: #ffae00;
             transform: scale(1.05);
         }
 
-        /* Styling Section */
         .section {
             margin-top: 30px;
             padding: 20px;
@@ -64,12 +60,11 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        /* Project, Certificate, and Awards */
         .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            justify-content: center;
         }
 
         .grid-item {
@@ -77,7 +72,6 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
             text-align: center;
         }
 
@@ -85,6 +79,12 @@
             width: 100%;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -95,9 +95,7 @@
         <p>Informatics Engineering Graduate | Front-End Developer | IoT Enthusiast</p>
 
         <h2>About Me</h2>
-        <p>I am a passionate Informatics Engineering graduate focusing on front-end development and IoT. With experience
-            in developing smart agriculture IoT systems and optimizing UI/UX, I strive to create efficient and
-            user-friendly solutions.</p>
+        <p>I am a passionate Informatics Engineering graduate focusing on front-end development and IoT. With experience in developing smart agriculture IoT systems and optimizing UI/UX, I strive to create efficient and user-friendly solutions.</p>
 
         <h2>Contact</h2>
         <p>Email: achmadnuraqmali@gmail.com</p>
@@ -108,32 +106,35 @@
             <a class="download-btn" href="cv.pdf" download>Download CV</a>
         </div>
 
-        <!-- Projects Section -->
         <div class="section">
             <h2>Projects</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <h3>Smart Hydroponics System</h3>
                     <p>Implemented Kalman Filter to stabilize pH sensor data.</p>
-                    <p>Circuit Design</p>
                     <img src="desain-rangkaian.png" alt="Smart Hydroponics System">
-                    <p>Interface</p>
-                    <img src="Interface.png" alt="Smart Hydroponics System">
                 </div>
 
                 <div class="grid-item">
-                    <h3> Analysis of Growth and Development of Hydroponic Plants in an IoT-Based Vertical Garden Using
-                        the RAL Method</h3>
-                    <p> Analyzed plant growth differences between IoT-based & conventional methods.</p>
-                    <p>Communication Topology</p>
-                    <img src="comuunication-topology.png" alt="Smart Hydroponics System">
-                    <p>Interface on Blynk APP</p>
-                    <img src="interface-blynk.png" alt="Smart Hydroponics System">
+                    <h3>IoT-Based Vertical Garden</h3>
+                    <p>Analyzed plant growth differences between IoT-based & conventional methods.</p>
+                    <img src="comuunication-topology.png" alt="Communication Topology">
                 </div>
             </div>
         </div>
 
-        <!-- Certifications Section -->
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="grid-container">
+                <div class="grid-item" style="grid-column: span 2;">
+                    <h3>PT Atosim Lampung Pelayaran</h3>
+                    <p><strong>Position:</strong> Staff - Ticket Agent</p>
+                    <p><strong>Years:</strong> 2019 - Present</p>
+                    <p>Responsible for managing ticket sales, customer service, and operational support to ensure smooth passenger boarding and scheduling.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="section">
             <h2>Certifications</h2>
             <div class="grid-container">
@@ -141,7 +142,6 @@
                     <h3>HTML & CSS Training</h3>
                     <p>Digital Talent Scholarship (2022)</p>
                 </div>
-
                 <div class="grid-item">
                     <h3>IoT Fundamentals</h3>
                     <p>Cisco Networking Academy (2023)</p>
@@ -149,26 +149,20 @@
             </div>
         </div>
 
-        <!-- Awards Section -->
         <div class="section">
             <h2>Awards</h2>
             <div class="grid-container">
-                <div class="grid-item">
+                <div class="grid-item" style="grid-column: span 2;">
                     <h3>Riset Kompetitif Mahasiswa (RKM)</h3>
-                    <p><strong>Research Title:</strong> Analysis of Growth and Development of Hydroponic Plants in an
-                        IoT-Based Vertical Garden Using the RAL Method</p>
+                    <p><strong>Research Title:</strong> Analysis of Growth and Development of Hydroponic Plants in an IoT-Based Vertical Garden Using the RAL Method</p>
                     <p><strong>Role:</strong> IoT System Designer & Implementer</p>
                     <p>🏆 Selected through a multi-stage competition (Department → Faculty → University Level).</p>
-                    <p>🔧 Designed, developed, and implemented an IoT system for real-time pH & temperature monitoring
-                        in hydroponics.</p>
+                    <p>🔧 Designed, developed, and implemented an IoT system for real-time pH & temperature monitoring in hydroponics.</p>
                     <p>📊 Analyzed plant growth differences between IoT-based & conventional methods.</p>
-                    <p>🌱 <strong>Results:</strong> Improved farming efficiency & data accuracy for plant growth
-                        monitoring.</p>
+                    <p>🌱 <strong>Results:</strong> Improved farming efficiency through data-driven insights.</p>
                 </div>
             </div>
         </div>
-
-
     </div>
 </body>
 
