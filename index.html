@@ -25,7 +25,8 @@
             backdrop-filter: blur(10px);
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             color: #f8d210;
         }
 
@@ -34,7 +35,8 @@
             line-height: 1.6;
         }
 
-        .links a, .download-btn {
+        .links a,
+        .download-btn {
             display: inline-block;
             margin: 10px;
             padding: 12px 18px;
@@ -47,7 +49,8 @@
             transition: transform 0.2s, background 0.3s;
         }
 
-        .links a:hover, .download-btn:hover {
+        .links a:hover,
+        .download-btn:hover {
             background: #ffae00;
             transform: scale(1.05);
         }
@@ -81,6 +84,23 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
+        .project-link {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #f8d210;
+            color: #1e3c72;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .project-link:hover {
+            background: #ffae00;
+            transform: scale(1.05);
+        }
+
         @media (max-width: 768px) {
             .grid-container {
                 grid-template-columns: 1fr;
@@ -95,7 +115,9 @@
         <p>Informatics Engineering Graduate | Front-End Developer | IoT Enthusiast</p>
 
         <h2>About Me</h2>
-        <p>I am a passionate Informatics Engineering graduate focusing on front-end development and IoT. With experience in developing smart agriculture IoT systems and optimizing UI/UX, I strive to create efficient and user-friendly solutions.</p>
+        <p>I am a passionate Informatics Engineering graduate focusing on front-end development and IoT. With experience
+            in developing smart agriculture IoT systems and optimizing UI/UX, I strive to create efficient and
+            user-friendly solutions.</p>
 
         <h2>Contact</h2>
         <p>Email: achmadnuraqmali@gmail.com</p>
@@ -113,12 +135,16 @@
                     <h3>Smart Hydroponics System</h3>
                     <p>Implemented Kalman Filter to stabilize pH sensor data.</p>
                     <img src="desain-rangkaian.png" alt="Smart Hydroponics System">
+                    <a class="project-link" href="https://github.com/achmad-nur/smart-hidroponik-kalman-filter"
+                        target="_blank">View on GitHub</a>
                 </div>
 
                 <div class="grid-item">
                     <h3>IoT-Based Vertical Garden</h3>
                     <p>Analyzed plant growth differences between IoT-based & conventional methods.</p>
                     <img src="comuunication-topology.png" alt="Communication Topology">
+                    <a class="project-link" href="https://github.com/achmad-nur/smart-hidroponik-kalman-filter"
+                        target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
@@ -130,7 +156,8 @@
                     <h3>PT Atosim Lampung Pelayaran</h3>
                     <p><strong>Position:</strong> Staff - Ticket Agent</p>
                     <p><strong>Years:</strong> 2019 - Present</p>
-                    <p>Responsible for managing ticket sales, customer service, and operational support to ensure smooth passenger boarding and scheduling.</p>
+                    <p>Responsible for managing ticket sales, customer service, and operational support to ensure smooth
+                        passenger boarding and scheduling.</p>
                 </div>
             </div>
         </div>
@@ -143,8 +170,8 @@
                     <p>Digital Talent Scholarship (2022)</p>
                 </div>
                 <div class="grid-item">
-                    <h3>IoT Fundamentals</h3>
-                    <p>Cisco Networking Academy (2023)</p>
+                    <h3>Java Script Training</h3>
+                    <p>Digital Talent Scholarship (2022)</p>
                 </div>
             </div>
         </div>
@@ -154,10 +181,12 @@
             <div class="grid-container">
                 <div class="grid-item" style="grid-column: span 2;">
                     <h3>Riset Kompetitif Mahasiswa (RKM)</h3>
-                    <p><strong>Research Title:</strong> Analysis of Growth and Development of Hydroponic Plants in an IoT-Based Vertical Garden Using the RAL Method</p>
+                    <p><strong>Research Title:</strong> Analysis of Growth and Development of Hydroponic Plants in an
+                        IoT-Based Vertical Garden Using the RAL Method</p>
                     <p><strong>Role:</strong> IoT System Designer & Implementer</p>
                     <p>🏆 Selected through a multi-stage competition (Department → Faculty → University Level).</p>
-                    <p>🔧 Designed, developed, and implemented an IoT system for real-time pH & temperature monitoring in hydroponics.</p>
+                    <p>🔧 Designed, developed, and implemented an IoT system for real-time pH & temperature monitoring
+                        in hydroponics.</p>
                     <p>📊 Analyzed plant growth differences between IoT-based & conventional methods.</p>
                     <p>🌱 <strong>Results:</strong> Improved farming efficiency through data-driven insights.</p>
                 </div>
