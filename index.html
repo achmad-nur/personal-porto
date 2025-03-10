@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achmad Nur Aqmali - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1,
+        h2 {
+            color: #f8d210;
+        }
+
+        p {
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .links a,
+        .download-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 18px;
+            text-decoration: none;
+            background: #f8d210;
+            color: #1e3c72;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .links a:hover,
+        .download-btn:hover {
+            background: #ffae00;
+            transform: scale(1.05);
+        }
+
+        .project-img {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 15px;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .small-img {
+            max-width: 300px;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-form button {
+            padding: 12px 18px;
+            background: #f8d210;
+            color: #1e3c72;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #ffae00;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Achmad Nur Aqmali</h1>
+        <p>Informatics Engineering Graduate | Front-End Developer | IoT Enthusiast</p>
+
+        <h2>About Me</h2>
+        <p>I am a passionate Informatics Engineering graduate focusing on front-end development and IoT. With experience
+            in developing smart agriculture IoT systems and optimizing UI/UX, I strive to create efficient and
+            user-friendly solutions.</p>
+
+        <h2>Contact</h2>
+        <p>Email: achmadnuraqmali@gmail.com</p>
+        <p>Phone: 085708676138</p>
+        <div class="links">
+            <a href="https://linkedin.com/in/achmad-nur-aqmali-61513a222" target="_blank">LinkedIn</a>
+            <a href="https://github.com/achmad-nur" target="_blank">GitHub</a>
+            <a class="download-btn" href="cv.pdf" download>Download CV</a>
+        </div>
+
+        <h2>Projects</h2>
+        <p><strong>Smart Hydroponics System</strong> - Implemented Kalman Filter to stabilize pH sensor data.</p>
+        <p>Circuit Design</p>
+        <img class="project-img" src="desain-rangkaian.png" alt="Smart Hydroponics System">
+        <p>Interface</p>
+        <img class="project-img" src="Interface.png" alt="Smart Hydroponics System">
+
+        <p><strong>Smart Hydroponics System</strong> - Implemented Kalman Filter to stabilize pH sensor data.</p>
+        <p>Communication Topology</p>
+        <img class="project-img" src="comuunication-topology.png" alt="Smart Hydroponics System">
+        <p>Interface on Blynk APP</p>
+        <img class="project-img small-img" src="interface-blynk.png" alt="Smart Hydroponics System">
+
+
+        <h2>Certifications & Awards</h2>
+        <p><strong>Riset Kompetitif Mahasiswa</strong> - IoT Vertical Garden Research (2023)</p>
+        <p><strong>HTML & CSS Training</strong> - Digital Talent Scholarship (2022)</p>
+        <p><strong>JavaScript Training</strong> - Digital Talent Scholarship (2022)</p>
+
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+
+</html>
