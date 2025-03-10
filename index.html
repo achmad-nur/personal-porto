@@ -13,7 +13,6 @@
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
             text-align: center;
-            transition: background 0.3s, color 0.3s;
         }
 
         .container {
@@ -24,20 +23,6 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             border-radius: 15px;
             backdrop-filter: blur(10px);
-            transition: transform 0.3s;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         h1,
@@ -70,53 +55,36 @@
             transform: scale(1.05);
         }
 
-        .project-img {
-            width: 100%;
-            max-width: 700px;
-            border-radius: 15px;
-            margin-top: 15px;
+        /* Styling Section */
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .small-img {
-            max-width: 300px;
+        /* Project, Certificate, and Awards */
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .contact-form {
+        .grid-item {
             background: rgba(255, 255, 255, 0.15);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            max-width: 400px;
+            text-align: center;
         }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .contact-form button {
-            padding: 12px 18px;
-            background: #f8d210;
-            color: #1e3c72;
-            font-weight: bold;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.2s, background 0.3s;
-        }
-
-        .contact-form button:hover {
-            background: #ffae00;
-            transform: scale(1.05);
+        .grid-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -140,24 +108,67 @@
             <a class="download-btn" href="cv.pdf" download>Download CV</a>
         </div>
 
-        <h2>Projects</h2>
-        <p><strong>Smart Hydroponics System</strong> - Implemented Kalman Filter to stabilize pH sensor data.</p>
-        <p>Circuit Design</p>
-        <img class="project-img" src="desain-rangkaian.png" alt="Smart Hydroponics System">
-        <p>Interface</p>
-        <img class="project-img" src="Interface.png" alt="Smart Hydroponics System">
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Smart Hydroponics System</h3>
+                    <p>Implemented Kalman Filter to stabilize pH sensor data.</p>
+                    <p>Circuit Design</p>
+                    <img src="desain-rangkaian.png" alt="Smart Hydroponics System">
+                    <p>Interface</p>
+                    <img src="Interface.png" alt="Smart Hydroponics System">
+                </div>
 
-        <p><strong>Smart Hydroponics System</strong> - Implemented Kalman Filter to stabilize pH sensor data.</p>
-        <p>Communication Topology</p>
-        <img class="project-img" src="comuunication-topology.png" alt="Smart Hydroponics System">
-        <p>Interface on Blynk APP</p>
-        <img class="project-img small-img" src="interface-blynk.png" alt="Smart Hydroponics System">
+                <div class="grid-item">
+                    <h3> Analysis of Growth and Development of Hydroponic Plants in an IoT-Based Vertical Garden Using
+                        the RAL Method</h3>
+                    <p> Analyzed plant growth differences between IoT-based & conventional methods.</p>
+                    <p>Communication Topology</p>
+                    <img src="comuunication-topology.png" alt="Smart Hydroponics System">
+                    <p>Interface on Blynk APP</p>
+                    <img src="interface-blynk.png" alt="Smart Hydroponics System">
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section">
+            <h2>Certifications</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>HTML & CSS Training</h3>
+                    <p>Digital Talent Scholarship (2022)</p>
+                </div>
+
+                <div class="grid-item">
+                    <h3>IoT Fundamentals</h3>
+                    <p>Cisco Networking Academy (2023)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards Section -->
+        <div class="section">
+            <h2>Awards</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Riset Kompetitif Mahasiswa (RKM)</h3>
+                    <p><strong>Research Title:</strong> Analysis of Growth and Development of Hydroponic Plants in an
+                        IoT-Based Vertical Garden Using the RAL Method</p>
+                    <p><strong>Role:</strong> IoT System Designer & Implementer</p>
+                    <p>🏆 Selected through a multi-stage competition (Department → Faculty → University Level).</p>
+                    <p>🔧 Designed, developed, and implemented an IoT system for real-time pH & temperature monitoring
+                        in hydroponics.</p>
+                    <p>📊 Analyzed plant growth differences between IoT-based & conventional methods.</p>
+                    <p>🌱 <strong>Results:</strong> Improved farming efficiency & data accuracy for plant growth
+                        monitoring.</p>
+                </div>
+            </div>
+        </div>
 
 
-        <h2>Certifications & Awards</h2>
-        <p><strong>Riset Kompetitif Mahasiswa</strong> - IoT Vertical Garden Research (2023)</p>
-        <p><strong>HTML & CSS Training</strong> - Digital Talent Scholarship (2022)</p>
-        <p><strong>JavaScript Training</strong> - Digital Talent Scholarship (2022)</p>
     </div>
 </body>
 
